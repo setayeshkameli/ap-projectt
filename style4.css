@@ -1,0 +1,29 @@
+.sidebar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #f2f2f2;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background-color: #ddd;
+}
+
+.main-content {
+    margin-right: 220px; /* تا جایی که نوار عمودی جا نگیرد */
+}
+
+.chart-container {
+    width: 80%;
+    margin: 20px auto;
+}
