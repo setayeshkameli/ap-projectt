@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>سبد خرید</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="style7.css">
+</head>
+<body>
+<div class="container">
+    <h2>سبد خرید</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>نام محصول</th>
+                <th>مواد اولیه</th>
+                <th>تعداد</th>
+                <th>قیمت واحد (تومان)</th>
+                <th>قیمت کل (تومان)</th>
+            </tr>
+        </thead>
+        <tbody id="cart-items">
+            <!-- محصولات اضافه شده به سبد خرید به صورت پویا در این قسمت نمایش داده می‌شود -->
+        </tbody>
+    </table>
+    <div class="form-group">
+        <label for="delivery-type">نوع سفارش:</label>
+        <select class="form-control" id="delivery-type" name="delivery-type">
+            <option value="online">بیرون بر</option>
+            <option value="in-person">حضوری</option>
+        </select>
+    </div>
+    <button id="checkout-btn" class="btn btn-primary">انتقال به صفحه پرداخت</button>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src="script7.js"></script>
+</body>
+</html>
