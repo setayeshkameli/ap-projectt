@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود به سایت</title>
+    <link rel="stylesheet" href="{% static 'style2.css' %}">
+</head>
+<body>
+<div class="container">
+    <h2>ورود به سایت</h2>
+    <form id="LoginForm" method="POST">
+        {% csrf_token %}
+        <input type="text" name="username_or_email" placeholder="نام کاربری یا ایمیل">
+        <input type="password" name="password" placeholder="رمز عبور">
+        <button type="submit" value="login">ورود</button>
+    </form>
+    <a href="{% url 'signin' %}">ثبت نام</a>
+   
+    {% if error_message %}
+        <p>{{ error_message }}</p>
+    {% endif %}
+</div>
+</body>
+</html>
