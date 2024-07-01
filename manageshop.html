@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Dashboard</title>
+    <link rel="stylesheet" href="manageshop.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-icon" id="navbar-icon">
+            &#9776; <!-- This is a hamburger menu icon -->
+        </div>
+    </nav>
+    <div class="sidebar" id="sidebar">
+        <div class="close-icon" id="close-icon">
+            &times; <!-- This is the close icon -->
+        </div>
+        <a href="store.html">مدیریت انبار</a>
+        <a href="add.html">اضافه کردن محصول</a>
+    </div>
+    <div class="content">
+        <canvas id="salesChart"></canvas>
+        <div class="product-selection">
+            <input type="radio" id="product1" name="product" value="Product 1" checked>
+            <label for="product1">نوشیدنی سرد</label>
+            <input type="radio" id="product2" name="product" value="Product 2">
+            <label for="product2">کیک</label>
+            <input type="radio" id="product3" name="product" value="Product 3">
+            <label for="product3">نوشیدنی گرم</label>
+        </div>
+    </div>
+    <script src="manageshop.js"></script>
+</body>
+</html>
